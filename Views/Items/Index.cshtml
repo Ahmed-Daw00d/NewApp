@@ -7,14 +7,14 @@
 
 <table class="table table-bordered  table-striped" style="width:100%">
     <thead>
-     <tr>
-        <th>
+     <tr class="table table-hover" >
+        <th scope="col">
          Item Name
         </th>
-        <th>
+        <th scope="col">
          Item Price
         </th>
-         <th>
+         <th scope="col">
           Date
          </th>
      </tr>
@@ -23,8 +23,8 @@
         @foreach (var item in Model)
         {
 
-            <tr>
-                <td>@item.Name</td>
+            <tr class=" table-secondary">
+                <td scope="row" class="table-primary">@item.Name</td>
                 <td>@item.Price</td>
                 <td>@item.CreatedDate</td>
             </tr>
